@@ -179,6 +179,15 @@ python main.py
 
 ---
 
+## 📝 To-Do
+
+- [ ] Optimize the model and create a Docker image.  
+- [ ] Rebuild the tokenizer in C++ for speed.  
+- [ ] Design a custom model instead of using nanoGPT.  
+- [ ] Explore and build alternative models like BERT or reasoning-focused architectures.
+
+---
+
 ## 📜 License
 
 [MIT License](./LICENSE)
