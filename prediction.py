@@ -1,10 +1,16 @@
 import os
+import time
 import torch
 from Tokenizer.Tokenizer import MyTokenizer
 from GPTModel.Model import *
 
-NEW_TOKENS_TO_GENERATE = 1000
 INPUT = "wine review : US : California : Bordeaux-style Red Blend : A blend of Cabernet"
+TOTAL_NUMBER_OF_REVIEWS = 3
+MAX_CONTEXT_LENGTH = 32
+
+TYPEWRITER_MODE = True  
+DESIRED_CHAR_PER_SEC = 40  
+DESIRED_DELAY = 1.0 / DESIRED_CHAR_PER_SEC
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -27,15 +33,31 @@ state_dict = torch.load(model_path, map_location=device, weights_only=True)
 model.load_state_dict(state_dict)
 model.to(device)
 model.eval()
-print("Model loaded...")
+print("Model loaded...\n")
 
 print("Input: ")
-print(INPUT)
-context = torch.tensor([tokenizer.encode(INPUT)], dtype=torch.long, device=device)
-output = tokenizer.decode(model.generate(context, max_new_tokens=NEW_TOKENS_TO_GENERATE)[0].tolist())
-
-print("------------------------- ")
+print(INPUT + "\n")
 print("Output: ")
-print_output = output.replace(SPECIAL_TOKEN[0], "\n\n")
-print(print_output)
-print("\n\n")
+print("------------------------- ")
+print(INPUT, end='')
+
+context = torch.tensor([tokenizer.encode(INPUT)], dtype=torch.long, device=device)
+while TOTAL_NUMBER_OF_REVIEWS > 0:
+    start_time = time.time()
+
+    next_id = model.generate_simple(context)
+    next_char = tokenizer.decode(next_id[0].tolist())
+
+    if next_char == SPECIAL_TOKEN[0]:
+        print("\n\n", end='', flush=True)
+        TOTAL_NUMBER_OF_REVIEWS -= 1
+    else:
+        print(next_char, end='', flush=True)
+
+    context = torch.cat((context, next_id), dim=1)
+    context = context[:, -MAX_CONTEXT_LENGTH:]
+
+    if TYPEWRITER_MODE:
+        elapsed = time.time() - start_time
+        if elapsed < DESIRED_DELAY:
+            time.sleep(DESIRED_DELAY - elapsed)
