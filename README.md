@@ -129,37 +129,14 @@ python prediction.py
 ```
 Input: 
 wine review : US : California : Bordeaux-style Red Blend : A blend of Cabernet
-------------------------- 
+
 Output: 
-wine review : US : California : Bordeaux-style Red Blend : A blend of Cabernet, informal quality to this is finely sweet in the mouth. Bility elegant, with good apple skin, aromas of for drinking it high-tated Or. Fruity and baked blueberry, structured, withrell continues through with roast chicken flowers and sophisticated. And there's Carmenère.
+------------------------- 
+wine review : US : California : Bordeaux-style Red Blend : A blend of Cabernet Sauvignon but well- structured wine extra draw. The variety comes from out and st yellow peach and a tangy, with its caramel riding highose chis chemical and cinnamon, grainy citrus creamy glass. Spices and smooth The wine, black plum flavors on the palate. There's moderate, but more rather only fresh fennelred by sour L leavess chunkyery peach note, yet countered have a dry, with an easygoing wine that's balanced by smoother and aged in neutral French oak and cocoa. Tightly packed with the freshnesslow to soften.
 
-wine review : US : Virginia : Cabernet France : Grigio : Foxy aromas and it's complex, features a toasty note from heady blackberry, bacon is ready to intoxication blend of who and new oak, appealing aromas of dried sandard pepper. Like most sush a lengthy and firm tannins, clean but it is up the intense big, bright and mouth. Upine-cherry Merlot, the lengthy finish is perfumed wine, and an easygoing cherry, firm acidity that lifts it offers touches of savory spice backed by a finalating of candied bland Pod tobacco and orange way does out across the nose, barely be accentu on the nose and palate, followed by bright acidity and upfront, nutm kick it cherry flavors of black plum and peaches. R but itlaive. Dusty liver terly with a sharp.relely, it's in cherry and tight and turn chocolaty-old vines provide the bouquet is tannins finish. Drink through 2020.
+wine review : Italy : Tuscany : Red Blend : This blend of 87% Zinfandel, 26% Merlot, 20% Syrah and 9% Petit Verdot, this doesn't offering with a touch of Petit Verdot. Ripe juicy takes as elegant, lime, isn't drink firm, floral and toast leave an open feel lean palate Sauvignon Blancing T proportionate through the vintage structure. It gets a perfect mix of those exotic oak, raspberry, wood-tale Greek and wine. It's light and silky beginning to drink now, with a truffle and some ripe black fruit, which seems all add up to drink.
 
-wine review : Italy : Tuscany : Red Blend : Light, enjoyment, spice, a soft, tar the wine is ready to citric lift to a concentrated texture.
-
-wine review : France : Bordeaux : Bordeaux-style blends in wooded in the Entre-grained tannins and-bodied but in a uniquely und the end. Salty, light and ripe currant flavors have brings in feel, with a note.
-
-wine review : Australia : South Australia : Rosé : Rosé : This Merlot from good, sophisticated aromas of lime, wet earth, dark the of of of red spice and black cherry on the nose. The palate offers great mouthfeel, while the finish is rich with acidity and textured, structured and purple fruit, with in acidity a dry, citrus aromas of spice. Like any apple, with a bright acidity and a mineral. Res of redarralood, blueberry, apple and spice flavors finish.
-
-wine review : Australia : Sicily & Sardinia : Cabernet Sauvignon Blanc : This wine combines smoky, plump, toast and tropical fruit flavors estate vineyard since the spice creamy-textured Cab may not heavy but not make caramelized.
-
-wine review : Italy :asabablanca Valley : Corvina citrus with ripe flavors of extract gives ahe effort.
-
-wine review : US : California : Cabernet Sauvignon : Inspired-style Red Blend : Crushed violet, with rich wine but it feels being review anchino cherries. It is well as lively and sand se complexity. A good it is medium-balanced, packed but the bouquet With introduces flavors core is open feel due all, it apple and smooth. Acid prominently in acidity along with the very high acidity. Drink now.
-
-wine review : Roberts : Thermenregion : St. Laurent : Despite its own earlier with the palate, but it's just best Sauvignon Blanc, this is is complex and youthful, currant, g yet ro possibly well for another decade of stash it extremely approachable. Drink now, but it ideallyesternably-yearlyow accompaniment off and melon. Blackes it'll show some fine tannins, this is just some off dry, its an edgy high-red by hints of La tart coffee and here with candy. The wine is now.
-
-wine review : Spain : Northern Spain : Tempranillo : Fragon preserve and French oak flavors demand attention from the nose. Best from out w fig and round, this is rich in fruit and blackberry, moderately ripe fruit and as solid freshness to give way. Nut : Fresh palate is not labeled. The 2 through with acidity and goodicy raspberry flavors., gameing char pears ripe refined tannins provide the framework. Drink through 2019.
-
-wine review : US : New York : Baco Noir : Despite its delicate body, there's a fleshy raspberry, forward andaffable that works in sweetness, buterscoring the wine that show drops. Fresh acidity is well.
-
-wine review : US : California : Cabernet Sauvignon : G 100% Cabernet Sauvignon with its flashy touch of pineapples and Chardonnay fruit flavors. This packed with sush -scoring the palate is really too much.
-
-wine review : Portugal : Tejo : Rosé : This blend of mango, blackberries, citrus brings a purelyav cherry fruit and cedar months aromas. It'sad style. Save a few bottles until 2020 toist soon.
-
-wine review : US : California : Chardonnay : Racy acidity and fruity coat of a simple A good core of oak tones of oak, resin and balanced Pinot Noir displaysboa dishes. It's a Like any also with the  The wine, with a good price, veryenty and dry structure.
-
-wine review :
+wine review : US : Virginia : Syrah : Leafy, leather and aromas draw you but refined tannins provide balance ofgain verbena high-drinking choppy acidity provides needed balance, this doesn't come that lend it concentrated, this red-bodied texture is a ripe berry aromas of fragrant won't sleek savory pear and an attractive in previous vintages, flush and personality.
 ```
 
 ### 3. Training the Model
