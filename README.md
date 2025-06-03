@@ -14,6 +14,18 @@ This repository contains everything needed to reproduce the tokenizer, train the
 
 ---
 
+## 🧪 Try It Out
+
+Spin up the demo instantly with Docker:
+
+```bash
+docker run --rm -p 3000:3000 akashcs13/wine-review:latest
+```
+
+Or try it online without setup at 👉 [Smoll-GPT](https://wine-review.vercel.app/)
+
+---
+
 ## 🗂️ Directory Structure
 
 ```
@@ -158,7 +170,7 @@ python main.py
 
 ## 📝 To-Do
 
-- [ ] Optimize the model and create a Docker image.  
+- [X] Optimize the model and create a Docker image.  
 - [ ] Rebuild the tokenizer in C++ for speed.  
 - [ ] Design a custom model instead of using nanoGPT.  
 - [ ] Explore and build alternative models like BERT or reasoning-focused architectures.
